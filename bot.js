@@ -86,4 +86,17 @@ client.on('message', function(message) {
 
 
 
+client.on('voiceStateUpdate', (old, now) => {
+  const channel = client.channels.get('515601579643109416');
+  const currentSize = channel.guild.members.filter(m => m.voiceChannel).size;
+  const size = channel.name.match(/\[\s(\d+)\s\]/);
+  if (!size) return channel.setName(`'.Quietness [${currentSize}].`);
+  if (currentSize !== size) channel.setName(`'.Quietness [${currentSize}].`);
+});
+
+
+
+
+
+
 client.login(process.env.BOT_TOKEN);
