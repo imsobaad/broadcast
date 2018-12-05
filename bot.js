@@ -114,10 +114,6 @@ client.on('voiceStateUpdate', (old, now) => {
 
 
 
-client.on('ready', () => { //code bot not leave room voice //Bot Is Online
-    client.channels.get("519988684733415424").join(); //by : ....
-});
-
 
 
 
