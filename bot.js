@@ -9,7 +9,7 @@ client.on('ready', () => {
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Quietness Server`,"http://twitch.tv/S-F")
+client.user.setGame(`Nevira Server`,"http://twitch.tv/S-F")
   console.log('Online..,!!')
 });
 
