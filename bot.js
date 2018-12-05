@@ -15,6 +15,13 @@ client.user.setGame(`Nevira Server`,"http://twitch.tv/S-F")
 
 
 
+client.on('ready', () => { //code bot not leave room voice //Bot Is Online
+    client.channels.get("519988684733415424").join(); //by : ....
+});
+
+
+
+
 client.on('message', message => {
 if (message.content.split(' ')[0] == '#bc')
  message.guild.members.forEach( member => {
